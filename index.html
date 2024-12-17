@@ -1,0 +1,65 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Microscope Ray Diagram Simulation
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <header class="w-full bg-blue-600 text-white p-4 text-center">
+   <h1 class="text-2xl font-bold">
+    Microscope Ray Diagram Simulation
+   </h1>
+  </header>
+  <main class="flex flex-col items-center w-full p-4">
+   <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-4xl">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+     <div class="w-full md:w-1/2 p-4">
+      <img alt="Diagram showing the eye, objective lens, real image, virtual image, and light paths in a microscope" class="w-full h-auto" height="300" src="https://storage.googleapis.com/a1aa/image/6NkRK2mFbKpbAlfiafLeNtqfWJxGYWyC1tD8RnxJCXYW78uPB.jpg" width="400"/>
+     </div>
+     <div class="w-full md:w-1/2 p-4">
+      <h2 class="text-xl font-bold mb-4">
+       Simulation Controls
+      </h2>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="objective-lens">
+        Objective Lens Position:
+       </label>
+       <input class="w-full" id="objective-lens" max="100" min="0" name="objective-lens" type="range"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="eye-position">
+        Eye Position:
+       </label>
+       <input class="w-full" id="eye-position" max="100" min="0" name="eye-position" type="range"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="light-path">
+        Light Path Intensity:
+       </label>
+       <input class="w-full" id="light-path" max="100" min="0" name="light-path" type="range"/>
+      </div>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+       Update Diagram
+      </button>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="w-full bg-blue-600 text-white p-4 text-center">
+   <p>
+    © 2023 Microscope Simulation. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>
